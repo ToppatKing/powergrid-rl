@@ -1,0 +1,7 @@
+# This directory receives training outputs:
+#   best_model.pt   — checkpoint with highest evaluation return
+#   final_model.pt  — checkpoint at end of training
+#   training_log.csv — per-update metrics (loss, KL, entropy, returns)
+#
+# All .pt and .csv files are gitignored (see ../.gitignore).
+# This placeholder file ensures the directory itself is tracked.

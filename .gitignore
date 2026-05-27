@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+coverage.xml
+.coverage
+
+# Training outputs (large files)
+results/*.pt
+results/*.csv
+results/*.png
+
+# IDE
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,39 @@
+# PowerGrid-RL default configuration
+# Override any value with command-line flags or by passing a custom YAML.
+
+# ── Training ──────────────────────────────────────────────────────────────────
+training:
+  total_steps:    1_000_000
+  seed:           42
+  output_dir:     results/
+  eval_interval:  50_000    # evaluate every N global steps
+  log_interval:   10        # print stats every N PPO updates
+
+# ── Environment ───────────────────────────────────────────────────────────────
+env:
+  base_load_mw:     1200.0  # mean demand (MW)
+  max_carbon_price: 80.0    # normalisation denominator for carbon price
+
+# ── PPO ───────────────────────────────────────────────────────────────────────
+ppo:
+  # Rollout
+  rollout_steps:     2048
+  num_envs:          1
+
+  # Optimisation
+  num_epochs:        4
+  num_mini_batches:  8
+  learning_rate:     3.0e-4
+  anneal_lr:         true
+
+  # Objectives
+  gamma:             0.99
+  gae_lambda:        0.95
+  clip_coef:         0.2
+  value_coef:        0.5
+  entropy_coef:      0.01
+  max_grad_norm:     0.5
+  clip_value_loss:   true
+
+  # Network
+  hidden_dim:        256
