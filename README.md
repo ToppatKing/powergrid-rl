@@ -1,6 +1,6 @@
 # PowerGrid-RL: Custom Gymnasium Environment + PPO Agent
 
-[![CI](https://github.com/yourusername/powergrid-rl/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/powergrid-rl/actions)
+[![CI](https://github.com/ToppatKing/powergrid-rl/actions/workflows/ci.yml/badge.svg)](https://github.com/ToppatKing/powergrid-rl/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -133,7 +133,7 @@ Blackout Rate:
 ## Quick Start
 
 ```bash
-git clone https://github.com/yourusername/powergrid-rl.git
+git clone https://github.com/ToppatKing/powergrid-rl.git
 cd powergrid-rl
 pip install -e ".[dev]"
 ```
