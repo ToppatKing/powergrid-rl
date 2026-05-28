@@ -115,16 +115,20 @@ Implemented from scratch in PyTorch. Key components:
 
 ```
 Episode Return:
+
   ░░░▒▒▒▓▓▓███████████████████████  →  convergence ~400k steps
   -150                              →  +85
 
 Fuel Cost ($/episode):
+
   ███████████▓▓▓▒▒▒░░░░░░░░░░░░░░   →  -43% vs. random policy
 
 Carbon (tCO₂/episode):
+
   ████████████▓▓▓▒▒▒░░░░░░░░░░░░░   →  -38% vs. rule-based baseline
 
 Blackout Rate:
+
   ████████▓▓▓▓▒▒░░░░░░░░░░░░░░░░░   →  0.3% vs. 8.1% baseline
 ```
 
