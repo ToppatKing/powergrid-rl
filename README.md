@@ -19,11 +19,15 @@ The sandbox simulates a 4-bus ring network:
 
 **1. Install dependencies:**
 ```bash
-pip install torch numpy gymnasium pygame
+pip install -r requirements.txt
 ```
 **2. Run the Training Loops**
 ```bash
-python main.py
+python main.py 2>&1 | tee training.log
+```
+**3. View the Results**
+```bash
+python plot_results.py training.log
 ```
 
 *Note: By default, the Pygame renderer will pop up to show every 10th episode. To train headless at maximum speed, change `RENDER = False` inside `main.py`.*
